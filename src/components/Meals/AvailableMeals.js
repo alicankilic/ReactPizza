@@ -34,7 +34,7 @@ const AvailableMeals = (props) => {
     <section className={styles.meals}>
       <ul>
         {DUMMY_MEALS.map((elt) => {
-          return (<Card name={elt.name} description={elt.description} price={elt.price}/>)
+          return (<Card name={elt.name} description={elt.description} price={elt.price} id = {elt.id} />)
         })}
       </ul>
     </section>

@@ -4,12 +4,12 @@ import MealItem from "./MealItem";
 
 const Card = (props) => {
     
-    const {name,description,price} = props;
+    const {name,description,price,id} = props;
 
 
     return (
         <div className={styles.card}>
-            <MealItem name={name} description={description} price={price} />
+            <MealItem name={name} description={description} price={price} id={id}/>
         </div>
     );
 }
