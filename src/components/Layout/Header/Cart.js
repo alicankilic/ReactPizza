@@ -11,6 +11,8 @@ const Cart = (props) => {
     </ol>
   );
 
+  const {hide} = props;
+
   return (
     <Modal>
       {cartItems}
@@ -19,7 +21,7 @@ const Cart = (props) => {
         <span>35.22</span>
       </div>
       <div className={Styles.actions}>
-        <button className={Styles["button--alt"]}>Close it !</button>
+        <button className={Styles["button--alt"]} onClick={hide}>Close it !</button>
         <button className={Styles.button}>Take it !</button>
       </div>
     </Modal>
